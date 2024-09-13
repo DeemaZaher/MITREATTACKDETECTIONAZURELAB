@@ -360,3 +360,18 @@ While this scheduled task is non-malicious, an analyst would investigate similar
 
 ![Incident](https://imgur.com/n8wxgpC.png)
 
+## Part 6: MITRE ATT&CK
+
+The MITRE ATT&CK tactic observed in this lab is **TA0003: Persistence**, which enables malicious actors to establish and maintain a foothold in an environment.
+
+![Persistence](https://i.imgur.com/ttTepcP.png)
+
+We dive deeper by focusing on the **T1053.005** technique, which specifically covers using **Scheduled Tasks/Jobs** for persistence.
+
+![Scheduled Tasks/Jobs](https://i.imgur.com/37wZaa9.png)
+
+### Detection
+In this lab, monitoring and logging specific **Windows Event IDs** helped detect this activity. MITRE ATT&CK also recommends additional strategies for enhanced detection.
+
+### Mitigation
+To mitigate this, **MITRE ID M1019: User Account Management** suggests restricting user account privileges so that only authorized administrators can create scheduled tasks on remote systems.
